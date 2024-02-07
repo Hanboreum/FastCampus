@@ -8,6 +8,6 @@ public class test1000 {
         int a, b;
         a = sc.nextInt();
         b = sc.nextInt();
-        System.out.println(a - b);
+        System.out.println(a + b);
     }
 }
