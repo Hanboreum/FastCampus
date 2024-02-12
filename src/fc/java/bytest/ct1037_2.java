@@ -1,8 +1,8 @@
-package fc.java.baekjoon;
+package fc.java.bytest;
 
 import java.util.Scanner;
 
-public class test1037 {
+public class ct1037_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -26,5 +26,7 @@ public class test1037 {
         }
         System.out.println(Max * Min); //원래수 구하기
     }
-
 }
+
+
+

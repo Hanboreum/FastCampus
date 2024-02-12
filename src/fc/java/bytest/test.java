@@ -4,21 +4,29 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-       while(sc.hasNextInt()){
-           int n = sc.nextInt();
-           int num=0;
+        int N = sc.nextInt();
+        int[] divisors = new int[N];
 
-           for(int i=1; i<=n; i++){
-               num = (num*10 +1) % n;
+        // 진짜 약수 입력받기
+        for (int i = 0; i < N; i++) {
+            divisors[i] = sc.nextInt();
+        }
 
-               if( num == 0){
-                   System.out.println(i);
-                   break;
-               }
-           }
-       }
-       sc.close();
+        // 최대값과 최소값 찾기
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < N; i++) {
+            if (divisors[i] > max) {
+                max = divisors[i];
+            }
+            if (divisors[i] < min) {
+                min = divisors[i];
+            }
+        }
+
+        // 결과 출력
+        System.out.println(max * min);
     }
 }
