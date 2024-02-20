@@ -2,19 +2,20 @@ package fc.java.part2;
 
 public class BookTest {
     public static void main(String[] args) {
-        int a;
-        a = 10;
-        System.out.println("a = " + a);
+        // 한권의 책을 저장하고 출력
         String title = "java";
-        String company = "fastcompus";
-        String author = "Parkmail";
-        int page = 100;
-        String isbn = "!SBN";
-        System.out.println(title + "\t" + company + "\t");
+        int price = 10000;
+        String company = "fastcampus";
+        String author = "name";
+        int page =100;
+        String isbn = "ISBN-1122";
 
-        Book b = new Book();
-        b.title = "java";
-            
+        System.out.println(title + price);
+        //책 한권을 저장할 변수를 선언
+        Book b;
+    }
+    public static void printBook(){
+
     }
 
 }

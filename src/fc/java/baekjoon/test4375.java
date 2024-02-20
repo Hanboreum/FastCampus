@@ -12,7 +12,7 @@ public class test4375 {
             int num =0;
 
             for(int i=1; i<= n; i++){
-                num = (num *10 +1) %n;
+                num = (num *10 +1) %n; //무조건 1
 
                 if(num ==0){
                     System.out.println(i);

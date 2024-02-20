@@ -10,3 +10,5 @@ public class test1000 {
         System.out.println(a + b);
     }
 }
+
+

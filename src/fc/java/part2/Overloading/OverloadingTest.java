@@ -1,21 +1,23 @@
 package fc.java.part2.Overloading;
 
 public class OverloadingTest {
+    //정수형 실수형 같은이름 리턴
     public static void main(String[] args) {
-        float v = add(34.5f, 12.4f);
-        System.out.println("v = " + v);
-        int vv=  add(10,20);
-        System.out.println("vv = " + vv);
-
+        int a=3 ,b=8;
+        //float af= 3.4f, bf = 44.6f;
+        int sum = add(a,b);
+        System.out.println("sum = " + sum);
+        float fsum = add(43.9f,56.2f);
+        System.out.println("fsum = " + fsum);
     }
-    //매개변수로 두개의 정수값을 받아/ 총합을 구해/ 리턴하는/ 메소드를 정의
-    public static int add(int a, int b) {
-        int sum = a + b;
+    public static int add(int a, int b){
+        int sum =0;
+        sum = a+b;
         return sum;
     }
 
-    public static float add(float a, float b){
-        float sum = a+b;
+    public static float add( float a, float b){
+        float sum = a +b;
         return sum;
     }
 }

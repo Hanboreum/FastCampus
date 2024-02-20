@@ -1,12 +1,16 @@
 package fc.java.model;
 
 public class CarDAO {
-    //CRUD
+    //CRUD 기능이 있는 곳
     public void carInsert(CarDTO car){
-        System.out.println("car 정보가 DB에 저장됨");
+        //db얀결
+        System.out.println("정보가 db에 연결됨");
     }
     public void carSelect(){
-        //db connected select sql
-        System.out.println("db정보가 출력 됨");
+        //DB연결 가져오기 select
+        System.out.println("car info print");
+    }
+    public void carDelete(){
+        System.out.println("car info delete");
     }
 }

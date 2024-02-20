@@ -5,22 +5,36 @@ import java.util.Scanner;
 public class ScannerExam {
     public static void main(String[] args) {
         //도서정보 입력 받기
-        Scanner scan = new Scanner(System.in);
-        System.out.println("제목 입력");
-        String title = scan.nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("title: ");
+        String title = sc.nextLine();
         System.out.println("title = " + title);
 
-        System.out.println("price");
-        int price = scan.nextInt();
+        System.out.print("price: ");
+        int price = sc.nextInt();
         System.out.println("price = " + price);
 
-        scan.nextLine();
+        sc.nextLine();
 
-        System.out.println("writer");
-        String writer = scan.nextLine();
-        System.out.println("writer = " + writer);
+        System.out.print("company: ");
+        String company = sc.nextLine();
+        System.out.println("company = " + company);
 
-        scan.close();
+        System.out.print("author: ");
+        String author = sc.nextLine();
+        System.out.println("author = " + author);
+
+        System.out.print("page: ");
+        int page = sc.nextInt();
+        System.out.println("page = " + page);
+
+        sc.nextLine();
+        System.out.print("isbn: ");
+        String isbn = sc.nextLine();
+        System.out.println("isbn = " + isbn);
+
+
+        sc.close();
     }
     
 }

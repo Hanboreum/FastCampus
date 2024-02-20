@@ -4,19 +4,20 @@ public class Person {
     public String name;
     public int age;
     public String phone;
-    //기본 생성자메서드
+
+
     public Person(){
-
+        //기본생성자 메서드
     }
-
     public void play(){
-        System.out.println("운동하기");
+        System.out.println("play");
     }
     public void eat(){
-        System.out.println("음식먹기");
+        System.out.println("eat");
+    }
 
-    }
     public void walk(){
-        System.out.println("걷기");
+        System.out.println("walk");
     }
+
 }

@@ -2,21 +2,20 @@ package fc.java.part2;
 
 public class ArrayMake {
     public static void main(String[] args) {
-        int a[] = {1,2,3,4,5};
-        int[] b = new int[5];
-
-       for( int x=0; x < b.length; x++){
-           b[x] = 10;
-            System.out.println(b[x]);
-        }
-
-        float f[] = new float[5]; //길이고정
+        int[] a= new int[5]; //정수 5개를 저장할 배열 생성
+        float[] f = new float[10];
 
         Book b1,b2,b3;
-        Book[] c= new Book[3];
+        Book[] b = new Book[3]; //객체배열
 
-        for (int i=0; i<a.length; i ++){
+        for (int i=0; i< a.length; i++){
+            a[i] +=10;
             System.out.println(a[i]);
         }
+
+        int arr[] = new int[]{1,2,3,4,5};
+
+
     }
+
 }
