@@ -12,9 +12,8 @@ public class test11720 {
         //String을tocharArray사용해 char[]타입으로 나눔
         char[] cNum = sNum.toCharArray();
         int sum =0;
-
         for(int i=0; i< cNum.length; i++){
-            sum +=cNum[i] ='0';
+            sum +=cNum[i] - '0'; //혹은 -48
             //아스키 코드를 사용해char 을 int로 바꾼다
             //문자형 '1'솨 숫자 1은 48차이가 남
             //ex '1' -48 =1
