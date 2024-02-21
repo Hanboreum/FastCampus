@@ -5,16 +5,18 @@ public class PersonVO {
     private int age;
     private String phone;
 
+
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name; //set으로 받고 저장
     }
 
     public int getAge() {
-        return age;
+        return age;// 내보내준다/ 정확한건 return this.age = age;
     }
 
     public void setAge(int age) {
