@@ -1,6 +1,6 @@
-package fc.java.part3;
+package fc.java.baekjoon;
 
-public class StaticTest {
+public class test10871 {
     public static void main(String[] args) {
 
     }

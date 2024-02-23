@@ -1,23 +1,26 @@
 package fc.java.model;
 
+import fc.java.part2.Movie;
+
 public class MovieVO {
     private String title;
     private int day;
+    private int time;
     private String major;
-    private String part;
-    private float time;
+    private int level;
 
-    //default 생성자
-    public MovieVO() {
+    public MovieVO(){
+
     }
 
-    public MovieVO(String title, int day, String major, String part, float time) {
+    public MovieVO(String title, int day, int time, String major, int level) {
         this.title = title;
         this.day = day;
-        this.major = major;
-        this.part = part;
         this.time = time;
+        this.major = major;
+        this.level = level;
     }
+
 
     public String getTitle() {
         return title;
@@ -35,6 +38,14 @@ public class MovieVO {
         this.day = day;
     }
 
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
     public String getMajor() {
         return major;
     }
@@ -43,20 +54,12 @@ public class MovieVO {
         this.major = major;
     }
 
-    public String getPart() {
-        return part;
+    public int getLevel() {
+        return level;
     }
 
-    public void setPart(String part) {
-        this.part = part;
-    }
-
-    public float getTime() {
-        return time;
-    }
-
-    public void setTime(float time) {
-        this.time = time;
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     @Override
@@ -64,9 +67,9 @@ public class MovieVO {
         return "MovieVO{" +
                 "title='" + title + '\'' +
                 ", day=" + day +
-                ", major='" + major + '\'' +
-                ", part='" + part + '\'' +
                 ", time=" + time +
+                ", major='" + major + '\'' +
+                ", level=" + level +
                 '}';
     }
 }

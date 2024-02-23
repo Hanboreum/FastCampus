@@ -8,10 +8,10 @@ public class ClassObjectInstance {
         Student st2;
         Student st3;
 
-        st1 = new Student("name0","computer",20,"@google",2023,"010---"); //생성 순간부터 instance st1 :instance
+        st1 = new Student("name0",20,"@google",2023); //생성 순간부터 instance st1 :instance
 
-        st2 = new Student("name1","computer",20,"@google",2023,"010---");
-        st3 = new Student("name2", "computer", 20, "@google", 2023, "010---");
+        st2 = new Student("name1",20,"@google",2023);
+        st3 = new Student("name2", 20, "@google", 2023);
 
         System.out.println(st1.toString());
 
