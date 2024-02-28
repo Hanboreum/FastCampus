@@ -8,7 +8,7 @@ public class RempVO extends Employee {
         super();
     }
    public RempVO(String name, int age,String dept, boolean marriage ){
-       super("Nnnn",34,"HR",false);
+       super(name,age,dept,marriage);
        //부모의 생성자 호출하고 값을 전달
    }
 }

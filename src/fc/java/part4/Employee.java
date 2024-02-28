@@ -8,7 +8,7 @@ public class Employee { //extends Object 이게 생략되어있음
 
     public Employee(){
         super(); //상위 클래스의 생성자를 호춯 //object부터 생성
-    }
+    }// 없어도 되나?
 
     public Employee(String name, int age, String dept, boolean marriage) {
         this.name = name;
