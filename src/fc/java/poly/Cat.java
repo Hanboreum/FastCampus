@@ -7,4 +7,7 @@ public class Cat extends Animal {
         System.out.println("Zzz");
     }
     //재정의 eat 안하기
+    public void eat(){
+        System.out.println("cat: eat");
+    }
 }
