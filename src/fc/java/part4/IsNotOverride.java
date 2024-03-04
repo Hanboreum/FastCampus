@@ -1,6 +1,6 @@
 package fc.java.part4;
 
-import fc.java.model.*;
+import fc.java.poly.*;
 
 public class IsNotOverride {
     public static void main(String[] args) {
