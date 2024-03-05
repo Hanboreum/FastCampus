@@ -1,13 +1,16 @@
 package fc.java.poly;
 
-import fc.java.model.Animal;
+import fc.java.poly.*;
 
 public class Cat extends Animal {
     public void night(){
         System.out.println("Zzz");
     }
-    //재정의 eat 안하기
-    public void eat(){
+
+    @Override
+    public void eat() {
         System.out.println("cat: eat");
     }
+    //재정의 eat 안하기
+
 }
