@@ -12,7 +12,7 @@ public class StreamExample {
         List<Integer>numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,9,10);
         Predicate<Integer> isEven = n->n%2 ==0;
         int sumOfSquares = numbers.stream()
-                .filter(StreamExample::isEven) //n->n % 2==0
+                .filter(StreamExample::isEven) //n->n % 2==0 , StreamExample::isEven메서드 참조
                 .sorted()
                 .map(n -> n * n)
                 .reduce(0,Integer::sum);
