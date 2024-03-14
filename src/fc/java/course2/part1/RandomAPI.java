@@ -21,7 +21,7 @@ public class RandomAPI {
                     break;
                 }
             }
-            if(!isDuplicate){
+            if(!isDuplicate){ // if(arr[i] != num) 이건어때
                 arr[i++] =num;
             }
         }//6개의 랜덤 수를 저장하는것

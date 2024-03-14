@@ -6,7 +6,7 @@ import fc.java.poly.B;
 public class ObjectPolyArray {
     public static void main(String[] args) {
         // a,b class를 저장할 배열을 생성
-        //이게 다형성 배ㅕ열
+        //이게 다형성 배열
         Object[] obj =new Object[2];
         obj[0] = new A();//upcasting
       //  ((A)obj[0]).printGO();
